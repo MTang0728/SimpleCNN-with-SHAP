@@ -2,6 +2,10 @@
 
 CNN (Convolutional Neural Network) has been at the forefront for image classification. Many state-of-the-art CNN architectures had been developed in the recent years to tackle the hardest computer vision problem, range from digit classification to real-time object detection. In addition, the applications of deep learning had always been controversial in many areas due to the lack of interpretability. Much effort have been devoted in the area of interpretable neural network, one of which utilizes the Shapley Additive Explanation (SHAP). This repository contains the creation of a simple CNN that can accurately classify 3 types of bugs (Beetle, cockroach and dragonfly), as well as the application of shapely value on the prediction outcome.
 
+The figure below shows sample pictures of bugs collected from [InsectImages.org](https://www.insectimages.org/):
+
+![fig1](./resources/bugs.png)
+
 
 The CNN architecture contains the following elements:
 - Convolution Layer (Kernel size: 5)
@@ -20,7 +24,11 @@ The CNN architecture contains the following elements:
 
 The model ran for 15 epochs and achieved an accuracy of 100%. The model Loss and Accuracy vs. Epochs are plotted below:
 
-![fig1](./resources/demo.gif)
+![fig2](./resources/performance.png)
+
+In an images, each pixel can be seen as a feature. Therefore, Shapley values in the context of machine leanring can be used to determine the pixel-level important in classifying images. This idea is illustrated in the image below:
+
+![fig3](./resources/shap.png)
 
 ## Blog Post
 
